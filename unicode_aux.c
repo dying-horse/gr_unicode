@@ -396,11 +396,11 @@ unicode_mbb_new(lua_State *L) {
  lua_setfield(L, -2, "bufstate");
 
  lua_createtable(L, 0, 1);
- lua_getglobal(L, "unicode");
- lua_getfield(L, -1, "mbb");
- lua_setfield(L, -3, "__index");
- lua_pop(L, 1);
+ lua_pushvalue(L, -3);
+ lua_setfield(L, -2, "__index");
  lua_setmetatable(L, -2);
+
+ lua_remove(L, -2);
 
  return 1;
 }
