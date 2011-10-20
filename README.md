@@ -1,3 +1,15 @@
+Allgemeine Hinweise:
+
+* Nutzer, die dieses lua-Modul nur installieren wollen, gehen dabei am
+  besten so wie [hier](https://github.com/dying-horse/gr_rocks/#readme)
+  beschrieben vor.
+* Mehr Dokumentation gibt es, wenn man im Basis-Verzeichnis
+  `luadoc .` aufruft.  Hierzu benötigt man das
+  [luadoc](http://keplerproject.github.com/luadoc/)-System, das man sich
+  mit Hilfe von [luarocks](http://luarocks.org/) beschaffen kann:
+  `luarocks install luadoc`.
+
+
 Um `gr_unicode` zu aktivieren, benutze:
 
 	require "gr_unicode"
