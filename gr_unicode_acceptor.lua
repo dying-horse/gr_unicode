@@ -442,6 +442,16 @@ function namestartchar(self)
  then   return ret, towc(':')
  end
 
+ ret = self:sc('-')
+ if     (ret ~= "no")
+ then   return ret, towc('-')
+ end
+
+ ret = self:sc('.')
+ if     (ret ~= "no")
+ then   return ret, towc('.')
+ end
+
  return "no"
 end
 
